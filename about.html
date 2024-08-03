@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AboutPage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- About - Section 1, What is Asian Allies -->
+  <div class="image-text">
+    <img src="assets/aboutImgs/faces.png" alt="Diverse hands" class='left-image'>
+    <div class="right-text">
+      <h2>What is Asian Allies</h2>
+      <p>
+        Asian Allies is a dedicated platform committed to combating hate crimes and discrimination against the Asian community. Our website serves as a central hub for raising awareness, sharing stories, and providing resources to those affected by these injustices. We aim to bring visibility to the personal experiences of discrimination and violence that often go unreported, fostering a sense of solidarity and support within the Asian community. Through Asian Allies, we seek to connect individuals, educate the public, and promote a deeper understanding of the challenges faced by Asians in today's society.
+      </p>
+    </div>
+  </div>
+
+  <!-- About - Section 2, Our Mission -->
+  <div class="text-image">
+    <div class="left-text">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission at Asian Allies is to empower individuals and communities to stand against hate and discrimination. We strive to create a safer, more inclusive society by amplifying voices, advocating for justice, and providing essential support to victims of hate crimes. We believe that every story matters and that by sharing these stories, we can inspire change and foster empathy. Our efforts are focused on educating the public, encouraging the reporting of hate crimes, and offering a platform where people can unite in their fight for equality and justice. At Asian Allies, we are dedicated to making a difference, one voice at a time.
+      </p>
+    </div>
+    <img src="assets/aboutImgs/hands.png" alt="Diverse hands" class='right-image'>
+  </div>
+
+  <!-- About - Section 3, How to Get Involved -->
+  <h2 class='center-subheading'>How To Get Involved</h2>
+  <p class="double-spaced">At Asian Allies, we believe that creating a safer and more inclusive community requires the collective effort of individuals from all walks of life. Your involvement is not just valuable—it's essential to driving the change we strive for. By joining us, you contribute to a shared mission of combating hate and fostering empathy. Your engagement, whether through offering your time, providing financial support, or advocating for our cause, plays a crucial role in advancing our initiatives. Each action, big or small, helps amplify our efforts, reach more people, and make a tangible impact. Together, we can work towards a future where everyone is treated with dignity and respect. Your participation helps us build a stronger, more connected community and ensures that the voices of those affected by hate crimes are heard and supported. Join us in making a difference and be a part of a movement that stands for justice, solidarity, and positive change.
+  </p>
+  <!-- Buttons -->
+  <div class="button-container">
+      <a href="about.html" id="customButton3" class="customButton">Volunteer</a>
+      <a href="about.html" id="customButton4" class="customButton">Donate</a>
+      <a href="about.html" id="customButton5" class="customButton">Share</a>
+      <a href="about.html" id="customButton6" class="customButton">Advocate</a>
+    </div>
+  </div>
+
+  <!-- About - Section 4, FAQ -->
+  <section id="faq-section">
+    <h2 class='center-subheading'>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Do you provide direct counseling or legal services?</h3>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>No, Asian Allies does not provide direct counseling or legal services. However, we are committed to connecting you with reputable resources and professionals who can offer the support and guidance you need. We can direct you to trusted counselors, legal aid organizations, and other relevant resources..</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What should I do if I need legal assistance?</h3>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>If you require legal assistance, we recommend contacting legal aid organizations or civil rights groups that specialize in hate crimes. These organizations can provide you with access to experienced attorneys and offer advice on navigating the legal system. We can provide recommendations for reputable legal resources and agencies.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Where can I find more information about hate crime statistics?</h3>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>For detailed information on hate crime statistics, you can explore resources provided by organizations such as the FBI, the Department of Justice, and civil rights groups. We also offer downloadable datasets related to hate crimes, including CSV files that provide insights into the data.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What types of resources can I find on your website?</h3>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Our website offers a variety of resources, including information on how to report hate crimes, legal and counseling services, community support, and educational materials. We also provide access to downloadable datasets and links to relevant organizations that can offer further assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About - Section 5, Contact Us -->
+  <section id="contact-section">
+    <h2 class="center-subheading">Contact Us</h2>
+    <div class="contact-section">
+      <img src="assets/aboutImgs/contact.png" alt="Contact Us Image" class="contact-image">
+      <div class="contact-container">
+        <form id="contact-form" action="https://formspree.io/f/mkgwrqal" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="contact-button">Send</button>
+        </form>
+        <div id="form-response" class="thank-you">
+          Thank you for your message!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div> 
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

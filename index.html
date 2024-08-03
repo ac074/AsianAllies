@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HomePage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Heading (quote: Spread love, not hate) -->
+  <h1 class="center-heading">
+    <span class="word1">Spread</span>
+    <span class="word2">LOVE,</span>
+    <span class="word3">not hate</span>
+  </h1>
+
+  <!-- Home - Section 1, Speak Now -->
+  <div class="text-image">
+    <div class="left-text">
+      <h2>Speak Now</h2>
+      <p>
+        Your voice matters, and sharing your story can make a powerful impact in the fight against hate crimes. By speaking out about your experiences, you not only bring awareness to the issue but also inspire others to take action and support the cause. Personal testimonies can highlight the human side of statistics, showing the real-life effects of hate and discrimination. Whether you’ve been directly affected or have witnessed an incident, your story can provide insight, foster empathy, and drive change. Share your story anonymously or openly, and become a beacon of hope and resilience for others in the community. Together, our voices can create a chorus for justice, support, and solidarity.
+      </p>
+    </div>
+    <img src="assets/homeImgs/protest.png" alt="StopAsianHate" class="right-image">
+  </div>
+
+  <!-- Home - Section 2, Real Stories (carousel) -->
+  <h2 class="center-subheading">Real Stories</h2>
+  <div class="carousel">
+    <!-- Carousel Stories -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p>"[My family was] going to Pakistan and it was like a week after 9/11 for a wedding and … TSA or someone in a uniform looked at me like he wanted me to die. … That was one [memory] that really stood out and then the other was my schoolteacher. She was like, ‘It’s just not fair that we’re being punished for something that your people did,’ or something. … I was in first grade."</p>
+      </div>
+      <div class="carousel-item">
+        <p>"As an Indian female, we tend to be very hairy … starting very young, so in sixth and seventh grade I was super hairy and so all the other girls would be like, ‘Oh my god, are you like shaving already? Or what’s going on with that?’ And then people would call me, ‘Sand N-word.’ A lot of just like, ‘Saddam’s daughter,’ just like those types of words."</p>
+      </div>
+      <div class="carousel-item">
+        <p>"At Subway, around 5 PM. While ordering, a female staff member greeted two other customers with a smile. However, when I greeted her, she gave me a cold look, muttered racial slurs, and rolled her eyes. Another staff member intervened, and after completing my order, I never returned to those restaurants."</p>
+      </div>
+      <div class="carousel-item">
+        <p>"Bus around 11 PM. On the bus, many people were speaking in normal voices. My classmate and I, both Asian, spoke quietly, yet a person in the front suddenly turned, raised his fist, and called me a "noisy Chinese virus," threatening to strangle me. Luckily, the bus was nearing a stop, and I quickly got off, ignoring his threats."</p>
+      </div>
+      <div class="carousel-item">
+        <p>"Today I was in class minding my business and then a student came up to me and said, "I’m from Asia" in a stereotypical Asian accent and pulled his eyes back to mock me. After that, I left to tell the principal but nothing happened."        
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel Indicators (dots) -->
+  <div class="carousel-dots">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <!-- Home - Section 3, Face the Facts -->
+  <div class="image-text">
+    <img src="assets/homeImgs/pointing.png" alt="StopAsianHate" class="left-image">
+    <div class="right-text">
+      <h2>Face the Facts</h2>
+      <p>
+        Asian hate crimes have surged following events like 9/11 and the COVID-19 pandemic, fueling hatred and alienation towards the Asian community and creating a hostile environment for many. Despite increased discrimination and violence, Asians are the least likely to report such hate crimes. This reluctance often stems from a fear of drawing unwanted attention or feeling like a burden to their families, especially for first-generation individuals with immigrant parents. However, they are not alone; many people in the Asian community are experiencing the same challenges. Click the button below to understand the full scope of this problem.
+      </p>
+      <a href="data.html" id="customButton1" class="customButton">View Data</a>
+    </div>
+  </div>
+
+  <!-- Home - Section 4, You are NOT Alone -->
+  <div class="text-image">
+    <div class="left-text">
+      <h2>You Are NOT Alone</h2>
+      <p>
+        Facing discrimination and hate crimes can feel isolating, but it’s important to know that you are not alone. Many in the Asian community share similar experiences of fear, pain, and frustration. These shared stories highlight the collective strength and resilience of the community. By connecting with others who understand what you're going through, you can find support, solidarity, and empowerment. Whether through community organizations, support groups, or simply sharing your story, you contribute to a louder, unified voice advocating for change and justice. Remember, together we are stronger, and every voice raised against hate makes a difference.
+      </p>
+      <a href="support.html" id="customButton2" class="customButton">Get Help</a>
+    </div>
+    <img src="assets/homeImgs/puzzleHeart.png" alt="StopAsianHate" class="right-image">
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div> 
+
+  <!-- Carousel Functionality -->
+  <script src="script.js" defer></script>
+  <script>
+    function currentSlide(index) {
+      const items = document.querySelectorAll('.carousel-item');
+      const dots = document.querySelectorAll('.dot');
+
+      if (items && dots && items.length > 0) {
+        items.forEach(item => item.style.display = 'none');
+        items[index].style.display = 'flex';
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+      }
+    }
+    window.currentSlide = currentSlide;
+  </script>
+</body>
+
+</html>

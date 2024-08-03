@@ -1,0 +1,597 @@
+/* Common Formatting */
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Centering */
+.center-heading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 3em;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+}
+.center-subheading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.center-align {
+  text-align: center;
+}
+
+/* Sections (text and image side by side) */
+.text-image, .image-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.text-image p, .image-text p {
+  line-height: 2;
+}
+.left-text, .right-text {
+  width: 50%; 
+  margin: 20px;
+}
+.text-image .right-image, .image-text .left-image {
+  max-width: 40%;
+  height: auto;
+  padding: 15px; 
+  margin: 0 auto;
+}
+
+
+/* Navbar */
+
+nav {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+nav .nav-left, nav .nav-right {
+  display: flex;
+}
+nav .nav-left ul, nav .nav-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul li, nav .nav-right ul li {
+  display: flex;
+  align-items: center;
+  padding: 14px 10px; 
+}
+nav .logo {
+  margin-right: 10px;
+  height: 24px;
+}
+nav ul li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+nav ul li a:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+
+/* Home Page */
+
+/* Heading (quote: Spread love, not hate) */
+.word1 {
+  color: black;
+  font-family: 'Times New Roman', serif;
+}
+.word2 {
+  color: #dc5f4b;
+  font-family: 'Brush Script MT', cursive;
+}
+.word3 {
+  color: black;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 100;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px;
+  width: 100%;
+}
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.carousel-item {
+  display: none;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  background-color: #dc5f4b; 
+  padding: 20px; 
+  border-radius: 10px; 
+  color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carousel-item.active {
+  display: flex;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 100px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #717171;
+}
+.carousel-item p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Buttons */
+#customButton1,
+#customButton2 {
+  background-color: #dc5f4b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#customButton1:hover,
+#customButton2:hover {
+  background-color: black;
+}
+
+
+/* Data Page */
+
+/* Fact Section */
+.fact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 20px; 
+}
+.fact-left, .fact-right {
+  width: 48%; 
+  box-sizing: border-box; 
+}
+.fact-left h2 {
+  width:100% 
+}
+.fact-right h2{
+  font-size: 3em;
+}
+.fact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+}
+
+
+/* Support Page */
+
+/* Resources */
+.resources-container {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+.resources {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+.resource-item {
+  flex: 0 1 45%; 
+  box-sizing: border-box;
+  text-align: left;
+  padding: 20px;
+}
+.double-spaced {
+  line-height: 2;
+  margin: 20px;
+}
+.resource-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 1.5em; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Quote */
+.word9 {
+  color: #dc5f4b;
+  font-family: 'Cookie', cursive;
+}
+.word4 {
+  color: #c24036;
+  font-family: 'Creepster', cursive;
+}
+.word5 {
+  color: black;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 700;
+}
+.word6 {
+  color: #e7a537;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 100;
+}
+.word7 {
+  color: #fecf2c;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 100;
+}
+.word8 {
+  color: black;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 50;
+}
+
+/* Buttons and Text Section */
+/* Minimal styling to ensure buttons are squares */
+.square-button {
+  width: 50px !important;
+  height: 50px !important;
+  max-width: 50px !important;
+  max-height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: #dc5f4b; /* Example color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 1;
+}
+
+.button1 {
+  background-color: #dc5f4b; 
+}
+
+.button2 {
+  background-color: #c24036; 
+}
+
+.button3 {
+  background-color: #e7a537; 
+}
+
+.button4 {
+  background-color: #fecf2c; 
+}
+
+.buttons-text-section {
+  margin: 20px;
+}
+
+.button-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.button-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button-text {
+  font-size: 16px;
+}
+
+.button-list li span {
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column {
+  background-color: #f4f4f4;
+}
+
+.right-column {
+  background-color: #ddd;
+}
+
+
+/* About Page */
+
+.button-container {
+  display: flex;
+  width: 100%;
+  gap: 10%; 
+  justify-content: space-between;
+  padding-bottom: 100px
+}
+.customButton {
+  flex: 1; 
+  text-align: center; 
+  text-decoration: none; 
+  padding: 20px;
+  color: white; 
+  font-size: 16px; 
+  border-radius: 15px;
+}
+#customButton3 {
+  background-color: #dc5f4b;
+}
+#customButton4 {
+  background-color: #c24036; 
+}
+#customButton5 {
+  background-color: #e7a537; 
+}
+#customButton6 {
+  background-color: #fecf2c; 
+}
+
+#customButton3:hover,
+#customButton4:hover,
+#customButton5:hover,
+#customButton6:hover, {
+  background-color: black;
+}
+
+/* FAQ Section */
+.faq-container {
+  margin: 20px;
+  padding: 0 20px;
+  padding-bottom: 100px;
+}
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.3em;
+}
+.faq-toggle {
+  font-size: 1.5em;
+  padding-left: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+}
+.faq-answer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.contact-image {
+  max-width: 45%;
+  height: auto;
+  border-radius: 8px;
+}
+.contact-container {
+  margin: 20px;
+  padding: 20px;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.contact-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.contact-button:hover {
+  background-color: black;
+}
+.thank-you {
+  display: none; 
+  color: black;
+  margin-top: 10px;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 5px 0;
+}
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Size */
+
+@media (max-width: 1024px) {
+  .text-image p, .image-text p {
+    line-height: 1;
+  }
+  .resources p {
+    line-height: 1;
+  }
+}
+@media (max-width: 768px) {
+  .text-image, .image-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-image p, .image-text p {
+    line-height: 2;
+  }
+  .left-text, .right-text {
+    width: 80%;
+    text-align: center;
+  }
+  .text-image .right-image, .image-text .left-image {
+    width: 80%;
+    max-width: none;
+    height: auto;
+  }
+  .carousel-inner {
+    width: 80%;
+  }
+  .item {
+    flex: 0 1 80%; 
+    padding: 10px; 
+  }
+  .resources {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .resource-item {
+    width: 80%; 
+    margin: 10px 0;
+  }
+  .resource-img {
+    max-width: 80%;
+  }
+  .resources p {
+    line-height: 2;
+    text-align: center;
+  }
+  .column {
+    flex: 100%;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-section .contact-image {
+    width: 80%;
+    max-width: none;
+    height: auto;
+  }
+  .contact-section .contact-container {
+    width: 80%;
+    max-width: none;
+    height: auto;
+  }
+}
