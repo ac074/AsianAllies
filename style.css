@@ -209,6 +209,20 @@ nav ul li a:hover {
   text-align: center; 
 }
 
+/* Data/Graphs */
+.iframe-container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.iframe-container iframe {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: 500px;
+}
+
 
 /* Support Page */
 
@@ -277,7 +291,6 @@ nav ul li a:hover {
 }
 
 /* Buttons and Text Section */
-/* Minimal styling to ensure buttons are squares */
 .square-button {
   width: 50px !important;
   height: 50px !important;
@@ -289,7 +302,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  background-color: #dc5f4b; /* Example color */
+  background-color: #dc5f4b; 
   color: white;
   border: none;
   border-radius: 8px;
@@ -593,5 +606,12 @@ nav ul li a:hover {
     width: 80%;
     max-width: none;
     height: auto;
+  }
+  .iframe-container {
+    flex-direction: column;
+  }
+  .iframe-container iframe {
+    width: 100%; 
+    height: 500px;
   }
 }

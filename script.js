@@ -62,6 +62,33 @@ document.addEventListener('DOMContentLoaded', () => {
   insertNavbar();
   insertFooter();
 
+  // Carousel
+  let currentSlideIndex = 0;
+  function showSlide(index) {
+    const items = document.querySelectorAll('.carousel-item');
+    const dots = document.querySelectorAll('.dot');
+    if (items.length > 0 && dots.length > 0) {
+      items.forEach(item => item.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      items[index].classList.add('active');
+      dots[index].classList.add('active');
+    }
+  }
+  function nextSlide() {
+    const items = document.querySelectorAll('.carousel-item');
+    currentSlideIndex = (currentSlideIndex + 1) % items.length;
+    showSlide(currentSlideIndex);
+  }
+  function currentSlide(index) {
+    currentSlideIndex = index;
+    showSlide(currentSlideIndex);
+  }
+  window.currentSlide = currentSlide;
+  // Automatically move to the next slide every 10 seconds
+  setInterval(nextSlide, 10000);
+  // Show the first slide initially
+  showSlide(currentSlideIndex);
+
   // FAQ Toggle
   const faqToggles = document.querySelectorAll('.faq-toggle');
   faqToggles.forEach(toggle => {
