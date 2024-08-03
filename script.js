@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="nav-left">
           <ul>
             <li>
-              <img src="assets/logo.png" alt="Logo" class="logo">
+              <img src="assets/images/logo.png" alt="Logo" class="logo">
               <a href="index.html">AsianAllies</a>
             </li>
           </ul>
